@@ -23,5 +23,14 @@ public class HomeAdminActivity extends AppCompatActivity {
                 startActivity(i);
             }
         });
+
+        ImageButton dataDiriImgButton = (ImageButton)findViewById(R.id.imgButtonDataDiri);
+        daftarDosenImgButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(HomeAdminActivity.this,CrudDosenActivity.class);
+                startActivity(i);
+            }
+        });
     }
 }

@@ -43,6 +43,12 @@ public class RecyclerViewDosenActivity extends AppCompatActivity {
         recyclerView.setLayoutManager(layoutManager);
         recyclerView.setAdapter(dosenAdapter);
     }
+
+    public void klikCrudDosen(View view)
+    {
+        Intent i = new Intent(RecyclerViewDosenActivity.this,CrudDosenActivity.class);
+        startActivity(i);
+    }
     private void addData(){
         dosenArrayList = new ArrayList<>();
         dosenArrayList.add(new Dosen("10211",
