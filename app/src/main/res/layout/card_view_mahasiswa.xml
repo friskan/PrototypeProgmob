@@ -4,19 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:onClick="klikCrudDosen"
+    android:onClick="klikCrudMahasiswa"
     app:cardElevation="3dp"
     app:cardUseCompatPadding="true">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="401dp"
-        android:layout_height="126dp"
+        android:layout_height="120dp"
         tools:layout_editor_absoluteX="4dp"
         tools:layout_editor_absoluteY="5dp">
 
         <TextView
-            android:id="@+id/txt_kode_kelas"
-            android:layout_width="47dp"
+            android:id="@+id/txt_nim"
+            android:layout_width="75dp"
             android:layout_height="30dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
@@ -31,8 +31,8 @@
             app:layout_constraintVertical_bias="0.056" />
 
         <TextView
-            android:id="@+id/txt_matkul_kelas"
-            android:layout_width="157dp"
+            android:id="@+id/txt_nama_mhs"
+            android:layout_width="190dp"
             android:layout_height="30dp"
             android:layout_marginTop="8dp"
             android:text="TextView"
@@ -43,42 +43,29 @@
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toEndOf="@+id/textView"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.051" />
+            app:layout_constraintVertical_bias="0.056" />
 
         <TextView
-            android:id="@+id/txt_hari_kelas"
+            android:id="@+id/txt_email_mhs"
             android:layout_width="252dp"
             android:layout_height="22dp"
             android:layout_marginTop="52dp"
             android:text="TextView"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.1"
+            app:layout_constraintHorizontal_bias="0.107"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/txt_sesi_kelas"
+            android:id="@+id/txt_alamat_mhs"
             android:layout_width="252dp"
             android:layout_height="22dp"
             android:layout_marginStart="8dp"
             android:text="TextView"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.049"
+            app:layout_constraintHorizontal_bias="0.056"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/txt_hari_kelas" />
-
-        <TextView
-            android:id="@+id/txt_dosen_kelas"
-            android:layout_width="252dp"
-            android:layout_height="22dp"
-            android:layout_marginStart="8dp"
-            android:text="TextView"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.049"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/txt_sesi_kelas"
-            app:layout_constraintVertical_bias="0.0" />
+            app:layout_constraintTop_toBottomOf="@+id/txt_email_mhs" />
 
         <TextView
             android:id="@+id/textView"
@@ -88,21 +75,8 @@
             android:text=" - "
             android:textAlignment="center"
             android:textSize="16sp"
-            app:layout_constraintStart_toEndOf="@+id/txt_kode_kelas"
+            app:layout_constraintStart_toEndOf="@+id/txt_nim"
             app:layout_constraintTop_toTopOf="parent" />
-
-        <ImageButton
-            android:id="@+id/imgButtonCrudDosen"
-            android:layout_width="75dp"
-            android:layout_height="75dp"
-            android:src="@drawable/flower2"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.852"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.509"
-            tools:srcCompat="@tools:sample/avatars" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

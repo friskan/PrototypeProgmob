@@ -49,11 +49,11 @@ public class DosenAdapter extends RecyclerView.Adapter<DosenAdapter.ViewHolder>{
 
         public ViewHolder(View view){
             super(view);
-            txtNidn= view.findViewById(R.id.txt_nidn);
-            txtNama = view.findViewById(R.id.txt_nama);
-            txtGelar = view.findViewById(R.id.txt_gelar);
-            txtEmail = view.findViewById(R.id.txt_email);
-            txtAlamat = view.findViewById(R.id.txt_alamat);
+            txtNidn= view.findViewById(R.id.txt_kode_kelas);
+            txtNama = view.findViewById(R.id.txt_matkul_kelas);
+            txtGelar = view.findViewById(R.id.txt_hari_kelas);
+            txtEmail = view.findViewById(R.id.txt_sesi_kelas);
+            txtAlamat = view.findViewById(R.id.txt_dosen_kelas);
         }
     }
 }

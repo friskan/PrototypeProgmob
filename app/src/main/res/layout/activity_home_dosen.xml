@@ -7,7 +7,7 @@
     tools:context=".HomeDosenActivity">
 
     <ImageButton
-        android:id="@+id/imgButtonDataDiri"
+        android:id="@+id/imgButtonDataDiriDosen"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_marginStart="8dp"
@@ -23,9 +23,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
         android:text="Data Diri"
-        app:layout_constraintEnd_toEndOf="@+id/imgButtonDataDiri"
-        app:layout_constraintStart_toStartOf="@+id/imgButtonDataDiri"
-        app:layout_constraintTop_toBottomOf="@+id/imgButtonDataDiri" />
+        app:layout_constraintEnd_toEndOf="@+id/imgButtonDataDiriDosen"
+        app:layout_constraintStart_toStartOf="@+id/imgButtonDataDiriDosen"
+        app:layout_constraintTop_toBottomOf="@+id/imgButtonDataDiriDosen" />
 
     <TextView
         android:id="@+id/textView2"

@@ -9,7 +9,25 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".CrudDosenActivity"></activity>
+        <activity android:name=".RecyclerViewDataKelasActivity">
+
+        </activity>
+        <activity android:name=".RecyclerViewKrsActivity2">
+
+        </activity>
+        <activity android:name=".RecyclerViewDosenActivity2">
+
+        </activity>
+        <activity android:name=".LoginSebagaiActivity">
+
+        </activity>
+        <activity android:name=".CrudMahasiswaActivity"></activity>
+        <activity android:name=".RecyclerViewMahasiswaActivity"></activity>
+        <activity android:name=".CrudKrsActivity"></activity>
+        <activity android:name=".RecyclerViewKrsActivity"></activity>
+        <activity android:name=".CrudMatkulActivity"></activity>
+        <activity android:name=".CrudDosenActivity" />
+        <activity android:name=".RecyclerViewMatkulActivity"></activity>
         <activity android:name=".RecyclerViewDosenActivity"></activity>
         <activity android:name=".HomeAdminActivity" />
         <activity android:name=".HomeDosenActivity" />

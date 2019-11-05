@@ -4,13 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:onClick="klikCrudDosen"
+    android:onClick="klikDataKelas"
     app:cardElevation="3dp"
     app:cardUseCompatPadding="true">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="401dp"
-        android:layout_height="126dp"
+        android:layout_height="160dp"
         tools:layout_editor_absoluteX="4dp"
         tools:layout_editor_absoluteY="5dp">
 
@@ -19,7 +19,7 @@
             android:layout_width="47dp"
             android:layout_height="30dp"
             android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="7dp"
             android:text="TextView"
             android:textAlignment="textEnd"
             android:textSize="16sp"
@@ -81,28 +81,28 @@
             app:layout_constraintVertical_bias="0.0" />
 
         <TextView
+            android:id="@+id/txt_jum_kelas"
+            android:layout_width="252dp"
+            android:layout_height="22dp"
+            android:layout_marginStart="8dp"
+            android:text="TextView"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.049"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_dosen_kelas"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
             android:id="@+id/textView"
             android:layout_width="10dp"
             android:layout_height="30dp"
-            android:layout_marginTop="12dp"
+            android:layout_marginTop="14dp"
             android:text=" - "
             android:textAlignment="center"
             android:textSize="16sp"
             app:layout_constraintStart_toEndOf="@+id/txt_kode_kelas"
             app:layout_constraintTop_toTopOf="parent" />
-
-        <ImageButton
-            android:id="@+id/imgButtonCrudDosen"
-            android:layout_width="75dp"
-            android:layout_height="75dp"
-            android:src="@drawable/flower2"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.852"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.509"
-            tools:srcCompat="@tools:sample/avatars" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
