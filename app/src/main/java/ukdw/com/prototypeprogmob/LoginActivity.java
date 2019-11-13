@@ -59,7 +59,7 @@ public class LoginActivity extends AppCompatActivity {
             } else if (emailText.getText().toString().contains("staff")) {
                 edit.putString("isLogin", "Admin");
                 edit.commit();
-                Intent i = new Intent(LoginActivity.this, HomeDosenActivity.class);
+                Intent i = new Intent(LoginActivity.this, HomeAdminActivity.class);
                 startActivity(i);
             }
         }
