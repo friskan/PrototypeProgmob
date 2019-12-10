@@ -2,6 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="ukdw.com.prototypeprogmob">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,38 +13,33 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".RecyclerViewDataKelasActivity">
+        <activity android:name=".SplashScreenActivity">
 
         </activity>
-        <activity android:name=".RecyclerViewKrsActivity2">
-
-        </activity>
-        <activity android:name=".RecyclerViewDosenActivity2">
-
-        </activity>
-        <activity android:name=".LoginSebagaiActivity">
-
-        </activity>
-        <activity android:name=".CrudMahasiswaActivity"></activity>
-        <activity android:name=".RecyclerViewMahasiswaActivity"></activity>
-        <activity android:name=".CrudKrsActivity"></activity>
-        <activity android:name=".RecyclerViewKrsActivity"></activity>
-        <activity android:name=".CrudMatkulActivity"></activity>
+        <activity android:name=".RecyclerViewDataKelasActivity"></activity>
+        <activity android:name=".RecyclerViewKrsActivity2"></activity>
+        <activity android:name=".RecyclerViewDosenActivity2"></activity>
+        <activity android:name=".LoginSebagaiActivity"></activity>
+        <activity android:name=".CrudMahasiswaActivity" />
+        <activity android:name=".RecyclerViewMahasiswaActivity" />
+        <activity android:name=".CrudKrsActivity" />
+        <activity android:name=".RecyclerViewKrsActivity" />
+        <activity android:name=".CrudMatkulActivity" />
         <activity android:name=".CrudDosenActivity" />
-        <activity android:name=".RecyclerViewMatkulActivity"></activity>
-        <activity android:name=".RecyclerViewDosenActivity"></activity>
+        <activity android:name=".RecyclerViewMatkulActivity" />
+        <activity android:name=".RecyclerViewDosenActivity">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
         <activity android:name=".HomeAdminActivity" />
         <activity android:name=".HomeDosenActivity" />
-        <activity android:name=".LoginActivity" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".MainActivity">
+        <activity android:name=".LoginActivity">
 
         </activity>
+        <activity android:name=".MainActivity"></activity>
 
         <meta-data
             android:name="preloaded_fonts"

@@ -52,19 +52,19 @@ public class RecyclerViewDosenActivity2 extends AppCompatActivity {
         dosenArrayList = new ArrayList<>();
         dosenArrayList.add(new Dosen("10211",
                 "Katon Wijana", "Master of Computer Sains", "katon@email.com",
-                "Jl. Mawar No. 11"));
+                "Jl. Mawar No. 11", ""));
         dosenArrayList.add(new Dosen("20134",
                 "Jong Jek Siang", "Magister Sains", "jjs@email.com",
-                "Jl. Melati No. 9"));
+                "Jl. Melati No. 9", ""));
         dosenArrayList.add(new Dosen("40322",
                 "Yetli Oslan", "Magister Ilmu Komputer", "yetli@email.com",
-                "Jl. Teratai No. 2"));
+                "Jl. Teratai No. 2", ""));
         dosenArrayList.add(new Dosen("50451",
                 "Budi Sutedjo", "Magister Manajemen Sistem Informasi", "budi@email.com",
-                "Jl. Kamboja No. 10"));
+                "Jl. Kamboja No. 10",""));
         dosenArrayList.add(new Dosen("40333",
                 "Umi Proboyekti", "Magister Ilmu Komputer", "umi@email.com",
-                "Jl. Tulip No. 3"));
+                "Jl. Tulip No. 3",""));
 
     }
 

@@ -20,16 +20,16 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login);
 
         SharedPreferences prefs = LoginActivity.this.getSharedPreferences("prefs_file", MODE_PRIVATE);
-        String statusLogin = prefs.getString("isLogin", null);
+        //String statusLogin = prefs.getString("isLogin", null);
         Button btnLogin = (Button) findViewById(R.id.loginBtn);
 
         btnLogin.setOnClickListener(myBtnLoginClick);
 
-        if (statusLogin != null) {
+        /*if (statusLogin != null) {
             btnLogin.setText("Logout");
         } else {
             btnLogin.setText("Login");
-        }
+        }*/
 
         /*Button btnLogin = (Button) findViewById(R.id.loginBtn);
         btnLogin.setOnClickListener(new View.OnClickListener() {

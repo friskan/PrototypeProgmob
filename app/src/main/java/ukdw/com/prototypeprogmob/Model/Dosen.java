@@ -1,18 +1,57 @@
 package ukdw.com.prototypeprogmob.Model;
 
+import com.google.gson.annotations.Expose;
+import com.google.gson.annotations.SerializedName;
+
 public class Dosen {
+
+    @SerializedName("id")
+    @Expose
+    private String id;
+
+    @SerializedName("nidn")
+    @Expose
     private String nidn;
+
+    @SerializedName("nama")
+    @Expose
     private String nama;
+
+    @SerializedName("gelar")
+    @Expose
     private String gelar;
+
+    @SerializedName("email")
+    @Expose
     private String email;
+
+    @SerializedName("alamat")
+    @Expose
     private String alamat;
 
-    public Dosen(String nidn, String nama, String gelar, String email, String alamat) {
+    @SerializedName("foto")
+    @Expose
+    private String foto;
+
+
+
+
+    public Dosen( String id, String nidn, String nama, String gelar, String email, String alamat, String foto) {
+        this.id = id;
         this.nidn = nidn;
         this.nama = nama;
         this.gelar = gelar;
         this.email = email;
         this.alamat = alamat;
+        this.foto = foto;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 
     public String getNidn() {
@@ -54,4 +93,14 @@ public class Dosen {
     public void setAlamat(String alamat) {
         this.alamat = alamat;
     }
+
+    public String getFoto() {
+        return foto;
+    }
+
+    public void setFoto(String foto) {
+        this.foto = foto;
+    }
+
+
 }
